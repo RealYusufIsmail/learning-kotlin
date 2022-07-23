@@ -1,7 +1,7 @@
 package variables
 
-import kotlinx.datetime.LocalDate
 import kotlinx.datetime.Month
+import java.time.LocalDate
 
 val favLangauge : String? = null
 
@@ -15,7 +15,7 @@ fun main() {
     var age = 15
 
     //every september the age is incremented by 1
-    val currentDate: LocalDate = LocalDate.now()
+    val currentDate: LocalDate = LocalDate.now();
     if (currentDate.month == Month.SEPTEMBER) {
         age++
     }
